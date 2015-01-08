@@ -14,18 +14,43 @@ body {
           box-sizing: border-box;
 }
 
+
 .masthead-heading,
 .masthead-intro,
 .content-footer {
     text-align: center;
 }
 
+/*
+  ========================================
+  Navigation Section
+  ========================================
+*/
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid #DDD;
+}
+.top-navigation .content {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+}
+
+/*
+  ========================================
+  Masthead Section
+  ========================================
+*/
 .masthead {
     background-image:     url('https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176');  
     background-repeat: no-repeat;
     background-size: cover;
     padding: 6em 0;
-    border-top: solid 1em #00395A;
 }
 
 .masthead-intro {
