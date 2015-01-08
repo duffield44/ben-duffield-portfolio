@@ -1,0 +1,118 @@
+body {
+    /* Typography Declarations */
+    margin: 0 0;
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+    text-align: center;
+}
+
+.masthead {
+    background-image:     url('https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    border-top: solid 1em #00395A;
+}
+
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FBF6F1;
+    text-shadow: 0px 0.04em 1px #D7A977;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.introduction-section > p,
+.location-section > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+    font-family: "Gentium Book Basic",      Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+  color: #00395A;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+.content-footer p {
+ color: white;
+}
+
+.content-footer a {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-weight: bold;
+  color: #D7A977;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.content-footer {
+  background-color: #002522;
+  padding: 2.5em 0;
+  margin-top: 3em;
+}
+
+@media only screen and (max-width: 800px) {
+  .introduction-section,
+  .location-section,
+  .questions-section {
+    padding: 0 0.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 1.5em 0;
+    }
+  }
+
