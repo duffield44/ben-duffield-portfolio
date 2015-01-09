@@ -39,6 +39,24 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 4em;
+    overflow: hidden;
+}
+.top-navigation .links {
+    list-style: none;
+    text-align: center;
+    margin: 1.2em 0 0 0;
+    letter-spacing: 0.05em;
+    padding: 0;
+    color: #838994;
+}
+.top-navigation .links li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+.top-navigation .links .active {
+  margin: 0;
+  font-weight: 600;
+  color: #4c5058;
 }
 
 /*
