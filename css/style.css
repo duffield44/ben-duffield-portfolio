@@ -58,7 +58,10 @@ body {
   font-weight: 600;
   color: #4c5058;
 }
-
+.top-navigation .links li:hover {
+  cursor: pointer;
+  color: #333333;
+}
 /*
   ========================================
   Masthead Section
