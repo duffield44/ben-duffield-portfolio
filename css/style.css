@@ -1,11 +1,11 @@
-body {
-    /* Typography Declarations */
-    margin: 0 0;
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+/*
+  ========================================
+  Preliminary Declarations & Reset
+  ========================================
+*/
+a {
+  text-decoration: none;
 }
-
 *,
 *:before,
 *:after {
@@ -14,6 +14,13 @@ body {
           box-sizing: border-box;
 }
 
+body {
+    /* Typography Declarations */
+    margin: 0 0;
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 .masthead-heading,
 .masthead-intro,
@@ -48,18 +55,21 @@ body {
     margin: 1.2em 0 0 0;
     letter-spacing: 0.05em;
     padding: 0;
-    color: #838994;
 }
 .top-navigation .links li {
+     display: inline-block;
+}
+.top-navigation .links a {
   display: inline-block;
   margin-left: 1.5em;
+  color: #838994;
 }
-.top-navigation .links .active {
+.top-navigation .links .active a {
   margin: 0;
   font-weight: 600;
   color: #4c5058;
 }
-.top-navigation .links li:hover {
+.top-navigation .links a:hover {
   cursor: pointer;
   color: #333333;
 }
