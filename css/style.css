@@ -17,6 +17,7 @@ body {
 
 .masthead-heading,
 .masthead-intro,
+.masthead-content,
 .content-footer {
     text-align: center;
 }
@@ -71,7 +72,8 @@ body {
     background-image:     url('https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176');  
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 6em 0;
+    padding: 6em 0 4em 0;
+    overflow: auto;
 }
 
 .masthead-intro {
@@ -95,7 +97,15 @@ body {
     color: #FBF6F1;
     text-shadow: 0px 0.04em 1px #D7A977;
 }
-
+.masthead-content {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+    color: #FFFFFF;
+    text-shadow: 0px 0.04em 1px #D7A977;
+}
 .introduction-section,
 .location-section,
 .questions-section {
