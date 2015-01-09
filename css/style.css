@@ -148,6 +148,12 @@ section > h1 {
   margin-top: 3em;
 }
 
+/*
+  ========================================
+  Responsive Parameters
+  ========================================
+*/
+
 @media only screen and (max-width: 800px) {
   .introduction-section,
   .location-section,
@@ -159,6 +165,9 @@ section > h1 {
 @media only screen and (max-width: 500px) {
     .masthead {
         padding: 1.5em 0;
+    }
+    .masthead-intro {
+      margin-top: 2em;
     }
   }
 
