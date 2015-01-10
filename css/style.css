@@ -204,12 +204,28 @@ section > h1 {
 .karma h1 {
   margin-top: 1em;
 }
+.hack-screenshot {
+  width: 57em;
+  height: 22.9em;
+}
+.karma-screenshot {
+  width: 57em;
+  height: 19.3em;
+}
 
 /*
   ========================================
   Responsive Parameters
   ========================================
 */
+
+@media only screen and (max-width: 1000px) {
+  .hack-times,
+  .karma {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   .introduction-section,
