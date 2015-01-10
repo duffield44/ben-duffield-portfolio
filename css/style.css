@@ -5,6 +5,7 @@
 */
 a {
   text-decoration: none;
+  color: #222222;
 }
 *,
 *:before,
@@ -196,7 +197,7 @@ section > h1 {
 .karma {
   max-width: 60em;
   padding: 1em 1em;
-  border: 0.2em solid #002522;
+  border: 0.2em solid #00395A;
   border-radius: 2em;
 }
 .hack-times h1, 
