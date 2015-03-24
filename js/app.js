@@ -63,7 +63,7 @@ $(function(){
 			category: "Website"
 		},
 		{
-			id: "10",
+			id: "11",
 			itemName: "Fact vs Fitness",
 			itemImage: "images/fact-vs-fitness.jpg",
 			category: "Website"
@@ -75,7 +75,7 @@ $(function(){
 
 		console.log("function working");
 		$.each(items, function(i){
-
+			
 			// Clone .item div		
 			var result = $('.templates .item').clone();
 
@@ -83,14 +83,15 @@ $(function(){
 			result.find('img').attr('src', items[i].itemImage);
 
 			// Add Name
-			$('.item .name').text(items[i].itemName);
+			result.find('.name').text(items[i].itemName);
 
-			// Add Category
+			// Add Category;
 			result.addClass(items[i].category);
-			$('.item .category').text(items[i].category);
+			result.find('.category').text(items[i].category);
 
 			// Append to container
 			$('#container').append(result);
+
 		});
 	}
 	createItem();
@@ -137,6 +138,14 @@ $(function(){
 				filter: '.Project'
 			}).isotope('shuffle');
 		}
+	});
+
+	// HOVER ON ITEM
+	$('.item').mouseenter(function(){
+		$(this).find('.hover').fadeIn(300);
+	})
+	.mouseleave(function(){
+		$(this).find('.hover').hide();
 	});
 
 });
