@@ -66,6 +66,13 @@ $(function(){
 			// Add image
 			result.find('img').attr('src', items[i].itemImage);
 
+			// Add Name
+			$('.item .name').text(items[i].itemName);
+
+			// Add Category
+			result.addClass(items[i].category);
+			$('.item .category').text(items[i].category);
+
 			// Append to container
 			$('#container').append(result);
 		});
@@ -80,6 +87,40 @@ $(function(){
     		itemSelector: '.item',
 	  		layoutMode: 'masonry'
   		}).isotope('shuffle');
+	});
+
+	// CLICK A CATEGORY - FILTER
+	$('.categories li').on('click', function(){
+
+		$('.item').addClass('w2');
+		var selectedCategory = $(this).find('a').text();
+
+		// Filter selected category
+		if (selectedCategory == "All"){
+			$container.isotope({
+				filter: '*'
+			}).isotope('shuffle');
+		}
+		else if (selectedCategory == "Apps"){
+			$container.isotope({
+				filter: '.App'
+			}).isotope('shuffle');
+		}
+		else if (selectedCategory == "Companies"){
+			$container.isotope({
+				filter: '.Company'
+			}).isotope('shuffle');
+		}
+		else if (selectedCategory == "Websites"){
+			$container.isotope({
+				filter: '.Website'
+			}).isotope('shuffle');
+		}
+		else if (selectedCategory == "Projects"){
+			$container.isotope({
+				filter: '.Project'
+			}).isotope('shuffle');
+		}
 	});
 
 });

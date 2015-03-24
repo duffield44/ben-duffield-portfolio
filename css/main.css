@@ -6,9 +6,19 @@
 	width: 100%;
 }
 
-.item { width: 25%; }
-.item.w2 { width: 33.33%; }
+.item { 
+	width: 25%; 
+}
+
+.item.w2 { 
+	width: 33.33%; 
+}
+
 .item img {
 	display: block;
 	width: 100%;
+}
+
+.item .hover {
+	display: none;
 }
