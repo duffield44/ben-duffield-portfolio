@@ -50,8 +50,24 @@ $(function(){
 			itemImage: "images/hypnotismpro.jpg",
 			category: "Company"
 		},
-
-
+		{
+			id: "9",
+			itemName: "Karma Clone",
+			itemImage: "images/karma.jpg",
+			category: "Website"
+		},
+		{
+			id: "10",
+			itemName: "Blasting Off with Bootstrap",
+			itemImage: "images/bootstrap.jpg",
+			category: "Website"
+		},
+		{
+			id: "10",
+			itemName: "Fact vs Fitness",
+			itemImage: "images/fact-vs-fitness.jpg",
+			category: "Website"
+		}
 	]	
 
 	// CREATE ITEM
