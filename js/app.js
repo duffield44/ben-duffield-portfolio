@@ -1,30 +1,60 @@
 $(function(){
 
-	// List of Project Items
+	// LIST OF PROJECT ITEMS
 	var items = [
 		{
 			id: "1",
-			itemImage: "images/shopping.jpg"
+			itemName: "Shopping List",
+			itemImage: "images/shopping.jpg",
+			category: "App"
 		},
 		{
 			id: "2",
-			itemImage: "images/ryu.jpg"
+			itemName: "jQuery Street Fighter",
+			itemImage: "images/ryu.jpg",
+			category: "App"
 		},
 		{
 			id: "3",
-			itemImage: "images/price-my-ride.png"
+			itemName: "Price My Ride",
+			itemImage: "images/price-my-ride.png",
+			category: "App"
 		},
 		{
 			id: "4",
-			itemImage: "images/hot-or-cold.jpg"
+			itemName: "Hot or Cold",
+			itemImage: "images/hot-or-cold.jpg",
+			category: "App"
 		},
 		{
 			id: "5",
-			itemImage: "images/premierleague-quiz.png"
-		}
+			itemName: "Premier League Quiz",
+			itemImage: "images/premierleague-quiz.png",
+			category: "App"
+		},
+		{
+			id: "6",
+			itemName: "My Special Dress",
+			itemImage: "images/my-special-dress.jpg",
+			category: "Company"
+		},
+		{
+			id: "7",
+			itemName: "Ubud Pilates Club",
+			itemImage: "images/ubud-pilates-club.jpg",
+			category: "Company"
+		},
+		{
+			id: "8",
+			itemName: "Hypnotism Pro",
+			itemImage: "images/hypnotismpro.jpg",
+			category: "Company"
+		},
+
+
 	]	
 
-	// Create Item and append to #container section
+	// CREATE ITEM
 	var createItem = function(){
 
 		console.log("function working");
@@ -42,7 +72,7 @@ $(function(){
 	}
 	createItem();
 
-	// Call Isotope plugin with imagesloaded
+	// CALL ISOTOPE PLUGIN
 	var $container = $('#container');
 
 	$container.imagesLoaded( function() {
