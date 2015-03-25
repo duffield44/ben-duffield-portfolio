@@ -157,8 +157,8 @@ $(function(){
 		$(this).find('.hover').hide();
 	});
 
-	// CLOSE BUTTON
-	$('.btn-close').on('click', function(){
+	// INTRO CLOSE BUTTON
+	$('.intro .btn-close').on('click', function(){
 		$('.intro').slideUp(400);
 	});
 

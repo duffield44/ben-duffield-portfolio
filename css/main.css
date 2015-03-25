@@ -12,18 +12,27 @@
 	font-size: 20px;
 }
 
-/*---INTRO SECTION---*/
+/*---INTRO & DESCRIPTION SECTION---*/
 
 .intro {
+	display: none;
+}
+
+.intro, .description {
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
-.intro h1, .intro .btn-close {
+.intro img, .description img {
+	width: 100%;
+}
+
+.intro h1, .intro .btn-close,
+.description h1, .description .btn-close {
 	display: inline-block;
 }
 
-.intro .btn-close {
+.intro .btn-close, .description .btn-close {
 	float: right;	
 }
 
