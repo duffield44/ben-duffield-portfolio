@@ -4,6 +4,10 @@
 	margin-bottom: 0;
 }
 
+.navbar-brand, .navbar li {
+	cursor: pointer;
+}
+
 .social-icons {
 	font-size: 20px;
 }

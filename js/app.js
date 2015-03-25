@@ -109,8 +109,17 @@ $(function(){
 	// CLICK A CATEGORY - FILTER
 	$('.categories li').on('click', function(){
 
-		$('.item').addClass('w2');
+		// Slide up intro section
+		$('.intro').slideUp(400);
+
 		var selectedCategory = $(this).find('a').text();
+
+		// Change item width for filter
+		if (selectedCategory == "All"){
+			$('.item').removeClass('w2');
+		} else {
+			$('.item').addClass('w2');
+		}	
 
 		// Filter selected category
 		if (selectedCategory == "All"){
@@ -151,6 +160,17 @@ $(function(){
 	// CLOSE BUTTON
 	$('.btn-close').on('click', function(){
 		$('.intro').slideUp(400);
+	});
+
+	// CLICK ON NAVBAR-BRAND
+	$('.navbar-brand').on('click', function(){
+		var introDisplay = $('.intro').css('display');
+		if (introDisplay == "none"){
+			$('.intro').slideDown(400);
+		}
+		else {
+			$('.intro').slideUp(400);
+		}
 	});
 
 });
