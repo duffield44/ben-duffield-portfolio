@@ -1,6 +1,29 @@
+/*---NAVBAR---*/
+
+.navbar {
+	margin-bottom: 0;
+}
+
 .social-icons {
 	font-size: 20px;
 }
+
+/*---INTRO SECTION---*/
+
+.intro {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.intro h1, .intro .btn-close {
+	display: inline-block;
+}
+
+.intro .btn-close {
+	float: right;	
+}
+
+/*---CONTAINER SECTION---*/
 
 #container {
 	width: 100%;
