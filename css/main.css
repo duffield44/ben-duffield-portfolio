@@ -35,6 +35,7 @@
 
 .item { 
 	width: 25%; 
+	cursor: pointer;
 }
 
 .item.w2 { 
@@ -67,4 +68,24 @@
 
 .hover .name {
 	margin-bottom: 0;
+}
+
+/*---REPONSIVE MEDIA-QUERIES---*/
+
+@media only screen and (max-width : 768px) {
+	.item { 
+		width: 33.33%; 
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.item { 
+		width: 50%; 
+	}
+}
+
+@media only screen and (max-width : 320px) {
+	.item { 
+		width: 100%; 
+	}
 }
