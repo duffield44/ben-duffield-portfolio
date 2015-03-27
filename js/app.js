@@ -134,8 +134,9 @@ $(function(){
 	// CLICK A CATEGORY - FILTER
 	$('.categories li').on('click', function(){
 
-		// Slide up intro section
+		// Slide up intro or description section 
 		$('.intro').slideUp(400);
+		$('.description').slideUp(400);
 
 		var selectedCategory = $(this).find('a').text();
 
@@ -200,12 +201,12 @@ $(function(){
 		// Add Button
 		desc.find('.btn-go').text(items[itemID - 1].button).attr('href', items[itemID - 1].url);
 
-		// Close .intro section
-		$('.intro').hide();
-
 		// Append to #descContainer section
 		$('#descContainer').empty().append(desc);
 		$(desc).slideDown(400);
+
+		// Close .intro section
+		$('.intro').slideUp(400);
 	});
 
 	// INTRO CLOSE BUTTON
@@ -215,6 +216,8 @@ $(function(){
 
 	// CLICK ON NAVBAR-BRAND
 	$('.navbar-brand').on('click', function(){
+
+		// Intro section slide up or down
 		var introDisplay = $('.intro').css('display');
 		if (introDisplay == "none"){
 			$('.intro').slideDown(400);
@@ -222,7 +225,9 @@ $(function(){
 		else {
 			$('.intro').slideUp(400);
 		}
-	});
 
+		// Description section slideup
+		$('.description').slideUp(400);
+	});
 });
 
