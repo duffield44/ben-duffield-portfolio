@@ -207,6 +207,13 @@ $(function(){
 
 		// Close .intro section
 		$('.intro').slideUp(400);
+
+
+		// DESCRIPTION CLOSE BUTTON
+		$('.description .btn-close').on('click', function(){
+			console.log("click");
+			$('.description').slideUp(400);
+		});
 	});
 
 	// INTRO CLOSE BUTTON
@@ -214,6 +221,7 @@ $(function(){
 		$('.intro').slideUp(400);
 	});
 
+	
 	// CLICK ON NAVBAR-BRAND
 	$('.navbar-brand').on('click', function(){
 
