@@ -24,7 +24,7 @@ $(function(){
 			itemImage: "images/price-my-ride.png",
 			category: "App",
 			button: "Price Your Ride",
-			url: "http://duffield44.github.io/premierleague-quiz"
+			url: "http://duffield44.github.io/car-price"
 		},
 		{
 			id: "4",
@@ -199,6 +199,9 @@ $(function(){
 
 		// Add Button
 		desc.find('.btn-go').text(items[itemID - 1].button).attr('href', items[itemID - 1].url);
+
+		// Close .intro section
+		$('.intro').hide();
 
 		// Append to #descContainer section
 		$('#descContainer').empty().append(desc);
