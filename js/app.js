@@ -5,7 +5,7 @@ $(function(){
 		{
 			id: "1",
 			itemName: "Shopping List",
-			itemImage: "images/shopping.jpg",
+			itemImage: "images/shopping-list.jpg",
 			category: "App",
 			button: "Make Your List",
 			url: "http://duffield44.github.io/shopping-list/"
@@ -21,7 +21,7 @@ $(function(){
 		{
 			id: "3",
 			itemName: "Price My Ride",
-			itemImage: "images/price-my-ride.png",
+			itemImage: "images/price-my-ride.jpg",
 			category: "App",
 			button: "Price Your Ride",
 			url: "http://duffield44.github.io/car-price"
@@ -211,7 +211,6 @@ $(function(){
 
 		// DESCRIPTION CLOSE BUTTON
 		$('.description .btn-close').on('click', function(){
-			console.log("click");
 			$('.description').slideUp(400);
 		});
 	});
