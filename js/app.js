@@ -186,6 +186,8 @@ $(function(){
 	// CLICK ON ITEM
 	$('.item').on('click', function(){
 
+		$('html, body').animate({ scrollTop: 0 }, 400);
+
 		// Clone .description div
 		var desc = $('.templates .description').clone();
 		var itemID = $(this).attr('id');
