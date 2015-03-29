@@ -37,6 +37,10 @@
 	float: right;	
 }
 
+.description .btn-go {
+	margin: 20px 0;
+}
+
 /*---CONTAINER SECTION---*/
 
 #container {
