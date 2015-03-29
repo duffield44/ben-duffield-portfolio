@@ -33,6 +33,10 @@
 	display: inline-block;
 }
 
+.intro h1, .description h1 {
+	margin-right: 20px;
+}
+
 .intro .btn-close, .description .btn-close {
 	float: right;	
 	margin-top: 20px;
