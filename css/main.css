@@ -92,19 +92,19 @@
 /*---REPONSIVE MEDIA-QUERIES---*/
 
 @media only screen and (max-width : 768px) {
-	.item { 
+	.item, .item.w2 { 
 		width: 33.33%; 
 	}
 }
 
 @media only screen and (max-width : 600px) {
-	.item { 
+	.item, .item.w2 { 
 		width: 50%; 
 	}
 }
 
 @media only screen and (max-width : 320px) {
-	.item { 
+	.item, .item.w2 { 
 		width: 100%; 
 	}
 }
