@@ -249,5 +249,24 @@ $(function(){
 		// Description section slideup
 		$('.description').slideUp(400);
 	});
+
+	// CHANGE INTRO PICTURE WIDTH 
+	var checkWidth = function(){
+	    if ($(window).width() < 514) {
+	        $('.image-container').removeClass('col-xs-6 col-xs-offset-3');
+	        $('.image-container').addClass('col-xs-10 col-xs-offset-1');
+	    }
+	    else {
+	    	$('.image-container').removeClass('col-xs-10 col-xs-offset-1');
+	        $('.image-container').addClass('col-xs-6 col-xs-offset-3');
+	    }	    
+	}
+	checkWidth();
+
+    /*If browser resized, check width again */
+    $(window).resize(function() {
+        checkWidth();
+    });
+	
 });
 

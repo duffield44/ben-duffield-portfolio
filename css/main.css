@@ -35,6 +35,7 @@
 
 .intro .btn-close, .description .btn-close {
 	float: right;	
+	margin-top: 20px;
 }
 
 .description .btn-go {
