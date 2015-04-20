@@ -100,6 +100,15 @@ $(function(){
 			button: "Go To Website",
 			url: "http://www.factvsfitness.com/",
 			itemDesc: "STILL IN PRODUCTION. \nI am currently working with a client to build a fitness website, which will include fitness & nutrition articles, fitness videos, and downloadable meal plans. As we develop the site, a basic wordpress blog has been launched, indexed with Google, and search-engine optimized so that it can gain some page authority in the meantime."
+		},
+		{
+			id: "12",
+			itemName: "Angular Gem Store",
+			itemImage: "images/gem-store.gif",
+			category: "Project",
+			button: "Go To Website",
+			url: "http://duffield44.github.io/angular",
+			itemDesc: "A simple project using to show some knowledge of Angular.JS. This app also uses Twitter Bootstrap and makes use of the $http Angular service to fetch JSON data."
 		}
 	]	
 
