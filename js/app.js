@@ -26,7 +26,7 @@ $(function(){
 			itemImage: "images/price-my-ride.jpg",
 			category: "App",
 			button: "Price Your Ride",
-			url: "http://duffield44.github.io/car-price",
+			url: "http://www.price-myride.com/",
 			itemDesc: "Get the post-haggle price for your used car! This mobile responsive application allows users to appraise their used car by selecting their model, and entering it's year, mileage and condition. The app uses an AJAX call to retrieve vehicle information from the Edmunds.com API. Using the user's postcode, the app will display an appraised price for the car based on the current average base price in the area indicated. This project was built from scratch using HTML, CSS, AJAX and jQuery. The use of media-queries makes it reponsive to all devices. Maybe you're curious about the price of your car - give it a go!"
 		},
 		{
